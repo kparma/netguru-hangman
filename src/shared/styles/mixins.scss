@@ -43,3 +43,8 @@
 
   border-radius: 50%;
 }
+
+@mixin rounded-box($radius) {
+  display: block;
+  border-radius: $radius;
+}

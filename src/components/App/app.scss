@@ -2,9 +2,9 @@
 
 body {
   background-color: $primary-dark;
+  font-family: $basic-font;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 .app {
@@ -22,8 +22,26 @@ body {
   background-color: $grey-lightest;
   border-radius: 5px;
   box-shadow: 0 2px 47px 0 rgba(0, 0, 0, 0.26);
+  display: flex;
+  flex: 0 0 810px;
+  flex-flow: row wrap;
+  justify-content: space-between;
   height: 490px;
   margin: 0 auto;
+  overflow: hidden;
   padding: 37px;
+  position: relative;
   width: 810px;
+
+  &::after{
+    background-color: $primary;
+    bottom: 0;
+    content: '';
+    height: 353px;
+    position: absolute;
+    right: 0;
+    transform: translate(50%, 50%) rotate(45deg);
+    width: 353px;
+    z-index: 0;
+  }
 }

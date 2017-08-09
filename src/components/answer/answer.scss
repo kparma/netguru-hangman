@@ -1,0 +1,27 @@
+@import '~shared/styles/index.scss';
+
+.answer {
+  align-self: flex-end;
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+
+  &__letter {
+    @include rounded-box(8px);
+    @include sizing((63px, 70px));
+
+    background-color: transparentize($grey-dark, 0.02);
+    color: white;
+    font-size: $fs-subtitle;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &--empty {
+      @extend .answer__letter;
+      background-color: $grey-light;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '~shared/styles/index.scss';
+
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparentize($primary-dark, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+
+  &__message {
+    color: $white;
+    font-size: $fs-title;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    background: transparent;
+    border: 3px dashed $orange;
+    border-radius: 30px;
+    color: $orange;
+    cursor: pointer;
+    font-family: $basic-font;
+    font-size: $fs-basic;
+    font-weight: bold;
+    padding: 17px 50px;
+    text-transform: uppercase;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}

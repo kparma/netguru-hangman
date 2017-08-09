@@ -1,0 +1,24 @@
+@import '~shared/styles/index.scss';
+
+.fails {
+  flex: 0 0 385px;
+
+  &__heading {
+    color: $grey-dark;
+    font-size: $fs-basic;
+    margin: 0 0 3px;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  &__letter {
+    color: $primary;
+    display: inline-block;
+    font-size: $fs-title;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0 3px 0 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}

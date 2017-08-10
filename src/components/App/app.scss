@@ -14,7 +14,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   overflow: scroll;
-  padding: 85px;
+  padding: 85px 15px;
   width: 100vw;
 }
 
@@ -23,11 +23,11 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 47px 0 rgba(0, 0, 0, 0.26);
   display: flex;
-  flex: 0 0 810px;
+  flex: 0 1 810px;
   flex-flow: row wrap;
   justify-content: space-between;
-  height: 490px;
   margin: 0 auto;
+  min-height: 490px;
   overflow: hidden;
   padding: 37px;
   position: relative;

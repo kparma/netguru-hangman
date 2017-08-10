@@ -6,6 +6,7 @@ const mapSateToProps = state => ({
   gameOver: state.app.gameOver,
   gameWin: state.app.gameWin,
   loading: state.app.loading,
+  loadFail: state.app.loadFail,
 });
 
 const mapDispatchToProps = dispatch => ({

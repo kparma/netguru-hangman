@@ -1,5 +1,14 @@
 import { pushUnique, unique } from '../../utils/helpers';
-import { GET_WORD, GET_WORD_SUCCESS, FAILURE, SUCCESS, GAME_OVER, GAME_WIN, RESET } from './app.actions';
+import {
+  GET_WORD,
+  GET_WORD_SUCCESS,
+  GET_WORD_FAILURE,
+  FAILURE,
+  SUCCESS,
+  GAME_OVER,
+  GAME_WIN,
+  RESET
+} from './app.actions';
 
 export const initialState = {
   word: [],
@@ -10,6 +19,7 @@ export const initialState = {
   gameWin: false,
   gameOn: true,
   loading: true,
+  loadFail: false,
 };
 
 const appReducer = (state = initialState, action) => {
@@ -26,6 +36,13 @@ const appReducer = (state = initialState, action) => {
         word: action.payload.toLowerCase().split(''),
         toGuess: unique(action.payload.toLowerCase().split('')),
         loading: false,
+      };
+
+    case GET_WORD_FAILURE:
+      return {
+        ...state,
+        loading: false,
+        loadFail: true,
       };
 
     case FAILURE:

@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   render() {
-    const { gameOver, gameWin, loading } = this.props;
+    const { gameOver, gameWin, loading, loadFail } = this.props;
 
     return (
       <section className={styles.app}>
@@ -37,7 +37,8 @@ class App extends Component {
           <Fails />
           <Answer />
           {gameOver && <Popup id="gameover" message="Game over" />}
-          {gameWin && <Popup id="gamewin" message="Congratulations!" />}
+          {gameWin && <Popup id="gamewin" message="You win!" />}
+          {loadFail && <Popup id="gamewin" message="Something went wrong :(" button={false} />}
           {loading && <Loader />}
         </div>
       </section>

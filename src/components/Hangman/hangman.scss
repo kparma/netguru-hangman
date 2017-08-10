@@ -28,8 +28,9 @@
 .hangman {
   @include sizing((195px, 320px));
 
+  flex: 0 0 195px;
   position: relative;
-  left: -37px;
+  left: -77px;
 
   &__gallows {
     @include part(120px, 15px, $grey-dark);

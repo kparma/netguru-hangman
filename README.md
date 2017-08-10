@@ -1,2 +1,2 @@
-##Netguru recruitment task
+## Netguru recruitment task
 Made by Krystian Parma

@@ -17,7 +17,9 @@ class Popup extends Component {
   }
 
   componentDidMount() {
-    this.button && this.button.focus();
+    if (this.button) {
+      this.button.focus();
+    }
   }
 
   render() {

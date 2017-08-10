@@ -14,12 +14,14 @@ class App extends Component {
     gameOver: PropTypes.bool.isRequired,
     gameWin: PropTypes.bool.isRequired,
     loading: PropTypes.bool.isRequired,
+    loadFail: PropTypes.bool,
   }
 
   static defaultProps = {
     gameOver: false,
     gameWin: false,
     loading: true,
+    loadFail: false,
   }
 
   componentDidMount() {

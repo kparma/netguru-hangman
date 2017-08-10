@@ -7,7 +7,7 @@ import {
   SUCCESS,
   GAME_OVER,
   GAME_WIN,
-  RESET
+  RESET,
 } from './app.actions';
 
 export const initialState = {
